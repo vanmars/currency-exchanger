@@ -2,7 +2,7 @@
 
 _11 September 2020_
 
-#### _A currency converter from US dollars to other currencies using the most recent exchange rate_
+#### _A currency converter from US dollars to other currencies using the most recent exchange rate from ExchangeRate-API_
 
 #### By _**Vanessa Stewart**_
 
