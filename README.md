@@ -19,13 +19,26 @@ _Here are the following things your application must do._
 - _If the API call results in an error (any message not a 200 OK), the application should return a notification that states what the error is._
 - _If the query response doesn't include that particular currency, the application should return a notification that states the currency in question doesn't exist. (Note: Even if you use a dropdown menu to specify currencies instead of a form field, you'll still need to add this functionality to your code.)_
 
+_Further Exploration: If you have completed basic objectives with time to spare, consider adding additional features, such as:_
+
+* Allow users to convert currency between all available currency types.
+* Allow users to convert currency both to and from U.S. dollars.
+* Cache the API's results - so you only need to make the call once as long as a user is on the site. Try using session storage for this. If exchange rates are successfully being stored in session storage, an API call shouldn't be made. Instead, the rates can be grabbed directly from session storage.
+* Use a dropdown menu for currencies.
+
 ## Specifications
 | Test | Behavior | Input    | Output   |
 | -------- | -------- | -------- | -------- |
 | 1 | The program takes an inputted USD amount and an inputted currency and returns the converted amount. | USD: $100.00; Currency: Chinese Renminbi | 683.44 Chines Renminbi |
 | 2 | The program accepts at least five currencies. | USD: $100.00; Currencies: Chinese Renminbi, Norwegian Krone, Croatian Kuna, New Zealand Dollar, Argentine Peso  | 683.44 Chines Renminbi, 906.36 Norwegian Krone, 636.73 Croatian Kuna, 150.02 New Zealand Dollar, 7489.59 Argentine Peso |
-| 3 | The program displays API call failures | * plant mistake in API call url* | An error has occured: 400. |
+| 3 | The program displays API call failures | * plant mistake in API call url * | An error has occured: 400. |
 | 4 | If currency query not supported by API, the program returns a notification, stating the currency in question does not exist. | Malawian Kwacha | Sorry, the Malawian Kwacha is not supported at this time. |
+
+## Further Exploration Specifications
+| Test | Behavior | Input    | Output   |
+| -------- | -------- | -------- | -------- |
+| 5 | The program includes all available currency type in dropdown menu form. | * user clicks on dropdown menu * | 	UAE Dirham, Argentine Peso, Australian Dollar, Bulgarian Lev, Brazilian Real, Bahamian Dollar, Canadian Dollar, Swiss Franc, Chilean Peso, 	Chinese Renminbi, Colombian Peso, Czech Koruna, Danish Krone, Dominican Peso, Egyptian Pound, Euro, Fiji Dollar, 	Pound Sterling, 	Guatemalan Quetzal, Hong Kong Dollar, Croatian Kuna, Hungarian Forint, Indonesian Rupiah, Israeli New Shekel, 	Indian Rupee, 	Icelandic Krona, 	Japanese Yen, 	South Korean Won, 	Kazakhstani Tenge,  Maldivian Rufiyaa, Mexican Peso, Malaysian Ringgit, 	Norwegian Krone, 	New Zealand Dollar, Panamanian Balboa, 	Peruvian Sol, Philippine Peso, 	Pakistani Rupee, 	Polish Zloty, Paraguayan Guarani,	Romanian Leu, Russian Ruble, Saudi Riyal, Swedish Krona, 	Singapore Dollar, Thai Baht, Turkish Lira, New Taiwan Dollar,	Ukrainian Hryvnia, Uruguayan Peso, South African Rand |
+| 6 | The program allows users to convert from and to US dollars. | Currency: Chinese Renminbi; Amount: 100 | 100 Chinese Renminbi is 14.63 USD |
 
 ## Setup/Installation Requirements
 
