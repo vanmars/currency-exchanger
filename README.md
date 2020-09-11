@@ -20,12 +20,12 @@ _Here are the following things your application must do._
 - _If the query response doesn't include that particular currency, the application should return a notification that states the currency in question doesn't exist. (Note: Even if you use a dropdown menu to specify currencies instead of a form field, you'll still need to add this functionality to your code.)_
 
 ## Specifications
-| Behavior | Input    | Output   |
-| -------- | -------- | -------- |
-| The program takes an inputted USD amount and an inputted currency and returns the converted amount. | USD: $100.00; Currency: Chinese Renminbi | 683.44 Chines Renminbi |
-| The program accepts at least five currencies. | USD: $100.00; Currencies: Chinese Renminbi, Norwegian Krone, Croatian Kuna, New Zealand Dollar, Argentine Peso  | 683.44 Chines Renminbi, 906.36 Norwegian Krone, 636.73 Croatian Kuna, 150.02 New Zealand Dollar, 7489.59 Argentine Peso |
-| The program displays API call failures | * plant mistake in API call url* | An error has occured: 400. |
-| If currency query not supported by API, the program returns a notification, stating the currency in question does not exist. | Malawian Kwacha | Sorry, the Malawian Kwacha is not supported at this time. |
+| Test | Behavior | Input    | Output   |
+| -------- | -------- | -------- | -------- |
+| 1 | The program takes an inputted USD amount and an inputted currency and returns the converted amount. | USD: $100.00; Currency: Chinese Renminbi | 683.44 Chines Renminbi |
+| 2 | The program accepts at least five currencies. | USD: $100.00; Currencies: Chinese Renminbi, Norwegian Krone, Croatian Kuna, New Zealand Dollar, Argentine Peso  | 683.44 Chines Renminbi, 906.36 Norwegian Krone, 636.73 Croatian Kuna, 150.02 New Zealand Dollar, 7489.59 Argentine Peso |
+| 3 | The program displays API call failures | * plant mistake in API call url* | An error has occured: 400. |
+| 4 | If currency query not supported by API, the program returns a notification, stating the currency in question does not exist. | Malawian Kwacha | Sorry, the Malawian Kwacha is not supported at this time. |
 
 ## Setup/Installation Requirements
 
