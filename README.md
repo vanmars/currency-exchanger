@@ -67,8 +67,8 @@ OR
 
 _There are no known bugs at this time._
 
-Items to Improve
-* Error message should be more specific than 'undefined'
+Items to Improve:
+* Need styling to handle small viewports: cards should stack and footer should not cover cards on scroll
 
 ## Support and Contact Details
 
