@@ -10,7 +10,7 @@ function getElements(response, inputtedAmount, inputtedCurrency){
     if (inputtedCurrency === "MAL"){
       $(".showResult").text("Sorry, the Malawian Kwacha is not supported at this time.");
     } else {
-      $(".showResult").text(`${inputtedAmount} USD is ${rate*inputtedAmount} ${inputtedCurrency}.`);
+      $(".showResult").html(`${inputtedAmount} USD = <span class='text-info'>${rate*inputtedAmount}</span> ${inputtedCurrency}`);
     }
   } else {
     $(".showError").text(`An error occured: ${response.message}`);
