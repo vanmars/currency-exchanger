@@ -43,7 +43,7 @@ _Further Exploration: If you have completed basic objectives with time to spare,
 ## Setup/Installation Requirements
 
 To View Project:
-* Open a web browser of your choice and navigate to the following page:
+* Open a web browser of your choice and navigate to the following page: https://vanmars.github.io/currency-exchanger/dist/index.html
 
 To Extend This Project:
 * Clone this project using the 'git clone https://github.com/vanmars/currency-exchanger.git' command in terminal/command line.
