@@ -10,7 +10,7 @@ function getElements(response, inputtedAmount, inputtedCurrency){
     let rate = response.conversion_rates[inputtedCurrency];
     $(".showResult").text(`${inputtedAmount} USD is ${rate*inputtedAmount} ${inputtedCurrency}.`);
   } else {
-    $(".showError").text(`An error occured: ${response.message}`);
+    $(".showError").text(`An error occured: ${response.error}`);
   }
 }
 
