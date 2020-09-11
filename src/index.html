@@ -6,6 +6,36 @@
   <title>Currency Exchanger</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="row h-100">
+      <div class="col-sm-12 h-100 my-5">
+        <div class="card card-block shadow p-4 w-50 text-center mx-auto">
+          <form>
+            <div class="form-group">
+              <p class="lead">US Dollars Currency Exchanger</p>
+              <label for="amount">$
+                <input id="amount" type="text" placeholder="100">
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="currency"></label>
+              <select id="currency">
+                <option value="ARS">Argentine Peso</option>
+                <option value="CNY">Chinese Renminbi</option>
+                <option value="HRK">Croatian Kuna</option>
+                <option value="MAL">Malawian Kwacha</option>
+                <option value="NZD">New Zealand Dollar</option>
+                <option value="NOK">Norwegian Krone</option> 
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success">Get Conversion!</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12 h-100 my-5">
+        <div class="result"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
