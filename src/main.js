@@ -31,25 +31,54 @@ function getUSDElements(response, inputtedAmount, inputtedCurrency){
 }
 
 $(document).ready(function(){
+  
+  CurrencyService.getConvertedAmount()
+    .then(function(response){
+      let stringifiedResponse = JSON.stringify(response);
+      sessionStorage.setItem("response", stringifiedResponse);
+    });
+  // console.log(sessionStorage);
+  // console.log(typeof(sessionStorage.getItem("response")));
+  let response = JSON.parse(sessionStorage.getItem("response"));
+  // console.log(response);
+  // console.log(typeof(response));
+
+
   $("form#fromUSD").submit(function(event){
     event.preventDefault();
     const inputtedAmount = $("#amountFromUSD").val();
     const inputtedCurrency = $("#currencyFromUSD").val();
-    $("#amountFromUSD").val("");
-    CurrencyService.getConvertedAmount()
-      .then(function(response){
-        getCurrencyElements(response, inputtedAmount, inputtedCurrency);
-      });
+    // $("#amountFromUSD").val("");
+    getCurrencyElements(response, inputtedAmount, inputtedCurrency);
   });
-  
+
   $("form#toUSD").submit(function(event){
     event.preventDefault();
     const inputtedAmount = $("#amountToUSD").val();
     const inputtedCurrency = $("#currencyToUSD").val();
-    $("#amountToUSD").val("");
-    CurrencyService.getConvertedAmount()
-      .then(function(response){
-        getUSDElements(response, inputtedAmount, inputtedCurrency);
-      });
+    // $("#amountToUSD").val("");
+    getUSDElements(response, inputtedAmount, inputtedCurrency);
   });
+
+  // $("form#fromUSD").submit(function(event){
+  //   event.preventDefault();
+  //   const inputtedAmount = $("#amountFromUSD").val();
+  //   const inputtedCurrency = $("#currencyFromUSD").val();
+  //   $("#amountFromUSD").val("");
+  //   CurrencyService.getConvertedAmount()
+  //     .then(function(response){
+  //       getCurrencyElements(response, inputtedAmount, inputtedCurrency);
+  //     });
+  // });
+
+  // $("form#toUSD").submit(function(event){
+  //   event.preventDefault();
+  //   const inputtedAmount = $("#amountToUSD").val();
+  //   const inputtedCurrency = $("#currencyToUSD").val();
+  //   $("#amountToUSD").val("");
+  //   CurrencyService.getConvertedAmount()
+  //     .then(function(response){
+  //       getUSDElements(response, inputtedAmount, inputtedCurrency);
+  //     });
+  // });
 });
