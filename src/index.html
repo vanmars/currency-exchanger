@@ -11,29 +11,33 @@
       <div class="col-sm-12 h-100 my-5">
         <div class="card card-block shadow p-4 w-50 text-center mx-auto">
           <form>
+            <h1>Currency Converter</h1>
+            <hr>
             <div class="form-group">
-              <p class="lead">US Dollars Currency Exchanger</p>
+              <p class="lead">Select a US Dollar Amount:</p>
               <label for="amount">$
                 <input id="amount" type="text" placeholder="100">
               </label>
             </div>
             <div class="form-group">
+              <p class="lead">Select a Currency:</p>
               <label for="currency"></label>
-              <select id="currency">
-                <option value="ARS">Argentine Peso</option>
-                <option value="CNY">Chinese Renminbi</option>
-                <option value="HRK">Croatian Kuna</option>
-                <option value="MAL">Malawian Kwacha</option>
-                <option value="NZD">New Zealand Dollar</option>
-                <option value="NOK">Norwegian Krone</option> 
+              <select id="currency" placeholder="Argentine Peso">
+                <option name="Argentine Pesos" value="ARS">Argentine Peso</option>
+                <option name="Chinese Renminbi" value="CNY">Chinese Renminbi</option>
+                <option name="Croatian Kuna" value="HRK">Croatian Kuna</option>
+                <option name="Malawian Kwacha" value="MAL">Malawian Kwacha</option>
+                <option name="New Zealand Dollars" value="NZD">New Zealand Dollar</option>
+                <option name="Norwegian Krone" value="NOK">Norwegian Krone</option> 
               </select>
             </div>
+            <br>
             <button type="submit" class="btn btn-success">Get Conversion!</button>
           </form>
+          <br>
+          <div class="showResult"></div>
+          <div class="showError"></div>
         </div>
-      </div>
-      <div class="col-sm-12 h-100 my-5">
-        <div class="result"></div>
       </div>
     </div>
   </div>
