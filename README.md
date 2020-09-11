@@ -8,7 +8,7 @@ _11 September 2020_
 
 ## Description
 
-This is a project for Epicodus meant to practice making API calls and separating buisness/service logic from user interface logic. the original directions for the assignment were as follows:
+This is a project for Epicodus meant to practice making API calls and separating buisness/service logic from user interface logic. The original directions for the assignment were as follows:
 
 _For this week's project, you'll create a currency exchange application. A user should be able to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). To determine the most recent exchange rate, your application will make an API call to the following exchange rate API._
 
@@ -60,7 +60,7 @@ When you are ready to view your project:
 
 OR
 
-* Run 'npm run build' to bundle your code, and then right click on the dist/index.html. Select 'Reveal in Finder' from the dropdown menu, and a window in your browser will open to the page.
+* Run 'npm run build' to bundle your code, and then open dist/index.html in a web browser.
 
 
 ## Known Bugs
