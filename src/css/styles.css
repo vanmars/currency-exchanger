@@ -2,10 +2,25 @@ body {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
-.container {
-  margin-top: 25vh;
-}
 
 .card {
   background-color: #acd0e7;
+}
+
+.container {
+  margin-top: 15vh;
+}
+
+/* Header Animation */
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: white;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
