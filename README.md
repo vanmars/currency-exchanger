@@ -70,7 +70,7 @@ _There are no known bugs at this time._
 Items to Improve
 * Error message should be more specific than 'undefined'
 
-## Support and contact details
+## Support and Contact Details
 
 _Connect with me at vamariestewart@gmail.com with ideas to improve this project._
 
