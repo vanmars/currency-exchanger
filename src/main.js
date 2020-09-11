@@ -23,7 +23,6 @@ $(document).ready(function(){
     const inputtedAmount = $("#amount").val();
     const inputtedCurrency = $("#currency").val();
     $("#amount").val("");
-    $("#currency").val("");
     CurrencyService.getConvertedAmount()
       .then(function(response){
         getElements(response, inputtedAmount, inputtedCurrency);
