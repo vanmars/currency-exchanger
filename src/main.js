@@ -8,7 +8,11 @@ import CurrencyService from './currencyService.js';
 function getElements(response, inputtedAmount, inputtedCurrency){
   if(response.conversion_rates){
     let rate = response.conversion_rates[inputtedCurrency];
-    $(".showResult").text(`${inputtedAmount} USD is ${rate*inputtedAmount} ${inputtedCurrency}.`);
+    if (inputtedCurrency === "MAL"){
+      $(".showResult").text("Sorry, the Malawian Kwacha is not supported at this time.");
+    } else {
+      $(".showResult").text(`${inputtedAmount} USD is ${rate*inputtedAmount} ${inputtedCurrency}.`);
+    }
   } else {
     $(".showError").text(`An error occured: ${response.error}`);
   }
