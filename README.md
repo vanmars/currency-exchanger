@@ -68,7 +68,7 @@ OR
 _There are no known bugs at this time._
 
 Items to Improve:
-* Need styling to handle small viewports: cards should stack and footer should not cover cards on scroll
+* Need styling to handle small viewports: cards should stack (possibly need to use .card-grid rather than .card-deck Bootstrap class)
 
 ## Support and Contact Details
 
