@@ -68,7 +68,7 @@ OR
 _There are no known bugs at this time._
 
 Items to Improve:
-* Need styling to handle small viewports: cards should stack (possibly need to use .card-grid rather than .card-deck Bootstrap class)
+* When viewed from a smaller port, the animation title needs to wrap and the form text fields need to stay centered.
 
 ## Support and Contact Details
 
